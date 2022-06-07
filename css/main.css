@@ -59,14 +59,16 @@ nav img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
   padding-right: 2%;
   color: #fcf200;
   padding-bottom: 3px;
 }
 
 .logo-text span {
-  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 1.3rem;
   color: white;
   padding-right: 2%;
 }
@@ -112,7 +114,7 @@ nav img {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -243,6 +245,8 @@ nav img {
   color: white;
   padding: 20px 10px;
   border: #fcf200 solid 2px;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
   margin-bottom: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -272,9 +276,9 @@ nav img {
           transform: scale(1.2);
 }
 
-.column:hover {
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+.column:nth-child(n):hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .column:nth-child(1):hover {
@@ -297,6 +301,7 @@ footer {
   height: -moz-fit-content;
   height: fit-content;
   display: block;
+  background-color: #000000;
   text-align: center;
   font-weight: lighter;
   margin-bottom: 5px;
@@ -304,6 +309,190 @@ footer {
 
 footer #git {
   cursor: pointer;
+}
+
+.lower-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 56em) [main-end] minmax(1em, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 56em) [main-end] minmax(1em, 1fr) [full-end];
+  grid-gap: 1em;
+  border-top: #616161 solid;
+}
+
+.lower-section h2 {
+  margin-top: 10%;
+  color: #fcf200;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.lower-section section {
+  grid-column: main;
+}
+
+.lower-section figure img {
+  width: 70%;
+  -webkit-box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+          box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+}
+
+.lower-section .info-lower-section p {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: wheat;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+}
+
+.lower-section .info-lower-section .zabytki li {
+  font-style: italic;
+  color: #ffffff;
+  text-align: left;
+  line-height: 80px;
+  margin-left: 10%;
+}
+
+.lower-section .info-lower-section .zabytki {
+  display: list-item;
+  list-style-position: outside;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.lower-section figure {
+  grid-column: full;
+  text-align: center;
+}
+
+.lower-section p {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: wheat;
+}
+
+.lower-section img {
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.lower-section > * {
+  background-color: #000000;
+  padding: 2em;
+}
+
+.gminy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2;
+      grid-template-columns: 2;
+  grid-auto-rows: minmax(400px, auto);
+  background: grey;
+}
+
+.image,
+.text {
+  background: #202020;
+  height: auto;
+  padding: 2%;
+}
+
+.text:nth-of-type(3) {
+  background: #363636;
+}
+
+.image:nth-of-type(4) {
+  background: #363636;
+}
+
+.image:nth-of-type(8) {
+  background: #363636;
+}
+
+.text:nth-of-type(7) {
+  background: #363636;
+}
+
+.text:nth-of-type(11) {
+  background: #202020;
+}
+
+.image:nth-of-type(12) {
+  background: #202020;
+}
+
+.image:nth-of-type(14) {
+  background: #202020;
+}
+
+.text:nth-of-type(13) {
+  background: #202020;
+}
+
+.text:nth-of-type(15) {
+  background: #363636;
+}
+
+.image:nth-of-type(16) {
+  background: #363636;
+}
+
+.image:nth-of-type(10) {
+  background: #363636;
+}
+
+.text:nth-of-type(9) {
+  background: #363636;
+}
+
+@media screen and (min-width: 1025px) {
+  .gminy {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    background: grey;
+  }
+  .text:nth-of-type(3) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .text:nth-of-type(7) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .text:nth-of-type(7) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .image:nth-of-type(10) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .text:nth-of-type(15) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 8;
+    grid-row: 8;
+  }
+  .image:nth-of-type(8) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
 }
 
 @-webkit-keyframes moveDown {
@@ -368,6 +557,35 @@ footer #git {
   .logo-text span {
     font-size: 1rem;
   }
+  .lower-section > * {
+    background-color: #000000;
+    padding: 0;
+  }
+  .lower-section > * p {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .lower-section .info-lower-section p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .lower-section .info-lower-section .zabytki li {
+    line-height: 20px;
+    margin-left: 5%;
+    border-bottom: wheat solid 1px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .lower-section .info-lower-section .zabytki li:last-child {
+    border-bottom: none;
+    margin-bottom: 5%;
+  }
+  .lower-section .info-lower-section .zabytki {
+    display: list-item;
+    list-style-position: outside;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   .nav-links ul {
     padding: 30px;
   }
@@ -390,6 +608,7 @@ footer #git {
   }
   .nav-links ul li a {
     color: black;
+    text-align: center;
   }
   #menu-1 {
     font-weight: bold;
@@ -402,6 +621,7 @@ footer #git {
     background-color: black;
   }
   .nav-links ul li a:hover {
+    font-size: 1.3rem;
     color: black;
   }
   nav {
@@ -431,5 +651,329 @@ footer #git {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/*-------------------- GMINY ---------------------*/
+.sub-header {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../img/slawno.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/slawno.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: #616161 solid 2px;
+}
+
+.sub-header h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.gminy .text {
+  padding: 5%;
+  color: white;
+  line-height: 50px;
+}
+
+.gminy span {
+  font-weight: bold;
+}
+
+.gminy .topspan {
+  border-top: #fcf200 solid 2px;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.gminy h2 {
+  padding-bottom: 2%;
+}
+
+.gminy .image img {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+          box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+}
+
+.gminy .image .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gminy .image .wrapper .wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.gminy .image .wrapper .wrapper2 img {
+  width: 100%;
+}
+
+/*-------------------- TURYSTYKA---------------------*/
+.sub-header2 {
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../img/zalew.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/zalew.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: #616161 solid 2px;
+}
+
+.sub-header2 h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+}
+
+.turystyka {
+  border-top: #616161 solid 2px;
+  width: 80%;
+  margin: auto;
+  color: wheat;
+}
+
+.turystyka h2 {
+  padding-bottom: 5%;
+}
+
+.turystyka .col-turystyka {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.turystyka .col-turystyka .wrapper3 {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.turystyka img {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+          box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+}
+
+.turystyka p {
+  text-align: justify;
+  padding-bottom: 5%;
+  border-bottom: #fcf200 solid 2px;
+}
+
+.turystyka i {
+  color: white;
+}
+
+.sub-header4 {
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../img/szlaki.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/szlaki.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: #616161 solid 2px;
+}
+
+.sub-header4 h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.szlak {
+  color: white;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.szlak h2 {
+  font-weight: bold;
+  color: #fcf200;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+}
+
+.szlak h4 {
+  padding-bottom: 3%;
+  font-weight: bolder;
+  font-size: 2rem;
+  border-top: #bdb32e solid 2px;
+  padding-top: 4px;
+}
+
+.szlak h5 {
+  font-size: 1.5rem;
+}
+
+.szlak p {
+  padding-bottom: 5%;
+  font-size: 1.2rem;
+}
+
+.szlak img {
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+          box-shadow: 1px 1px 0px #fcf200, 2px 2px 0px #fcf200, 3px 3px 0px #fcf200, 4px 4px 0px #fcf200, 5px 5px 0px #fcf200, 6px 6px 0px #fcf200, 7px 7px 0px #fcf200;
+}
+
+.szlak span {
+  border-bottom: #bdb32e solid 2px;
+  padding-bottom: 4px;
+}
+
+.szlak ul {
+  list-style-type: none;
+}
+
+.szlak ul li {
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.szlak ul li:nth-child(2n) {
+  color: #bdb32e;
+}
+
+.szlak ul li:last-child {
+  padding-bottom: 3%;
+}
+
+.szlak .images {
+  padding-bottom: 3%;
+}
+
+.sub-header3 {
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../img/galeria.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/galeria.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: #616161 solid 2px;
+}
+
+.sub-header3 h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 0.2em;
+}
+
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: -webkit-filter 0.3s ease-in;
+  transition: -webkit-filter 0.3s ease-in;
+  transition: filter 0.3s ease-in;
+  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  width: 100%;
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7)));
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 /*# sourceMappingURL=main.css.map */

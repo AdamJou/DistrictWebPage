@@ -60,12 +60,13 @@
      font-weight: bold;
      justify-content: space-between;
      font-family: 'Poppins', sans-serif;
-     font-size: 2rem;
+     font-size: 1.3rem;
+     font-weight: bolder;
      padding-right: 2%;
      color: #fcf200;
         span{
-         
-            font-size: 2rem;
+            font-weight: bolder;
+            font-size: 1.3rem;
             color: white;
             padding-right: 2%;
         }
@@ -74,6 +75,12 @@
 
 
    }
+
+
+
+
+
+
 
    @keyframes introLoad {
     from {
@@ -104,7 +111,7 @@
     color:white;
     transition:  500ms ease-in-out;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family:  'Poppins', sans-serif;
     
 
@@ -261,10 +268,10 @@ path{
     color:white;
     padding: 20px 10px;
     border: #fcf200 solid 2px;
- 
+    transition: 2s ease-in-out;
     margin-bottom: 5%;
     box-sizing: border-box;
-
+   
   
 
     h3{
@@ -288,20 +295,29 @@ path{
     img:hover{
         transform: scale(1.2);
     }
-   
+
+  
+    
+    
+
+    
+    
 
 
 }
 
-.column:hover{
-    transition: 1s ease-in;
+.column:nth-child(n):hover{
+    transition: 1s ease-in-out;
 }
+
+
+
 
 
 .column:nth-child(1):hover{
 
     background-color: #0b7a27;
-
+    
 }
 
 .column:nth-child(2):hover{
@@ -317,6 +333,17 @@ path{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 footer{
 
 
@@ -325,6 +352,7 @@ color: white;
 opacity: 0.7;
 height: fit-content;
 display: block;
+background-color: #000000;
 text-align: center;
 font-weight: lighter;
 margin-bottom: 5px;
@@ -336,6 +364,228 @@ margin-bottom: 5px;
 }
 
 
+.lower-section {
+    display: grid;
+    grid-template-columns: 
+      [full-start] minmax(1em, 1fr) 
+      [main-start] minmax(0, 56em) [main-end]
+      minmax(1em, 1fr) [full-end];
+    grid-gap: 1em;
+    border-top: #616161 solid;
+
+    h2{
+        margin-top: 10%;
+        color: #fcf200;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 5%;
+    }
+    section {
+        grid-column: main;
+
+      }
+
+    figure{
+        img{
+      
+            width: 70%;
+            box-shadow: 1px 1px 0px #fcf200,
+            2px 2px 0px #fcf200,
+            3px 3px 0px #fcf200,
+            4px 4px 0px #fcf200,
+            5px 5px 0px #fcf200,
+            6px 6px 0px #fcf200,
+            7px 7px 0px #fcf200,
+           
+        }
+        
+    }
+      .info-lower-section{
+        p{
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            color: wheat;
+            font-size: 1.2rem;
+            margin-bottom: 5%;
+          }
+
+        .zabytki li{
+            font-style: italic;
+           
+            color: #ffffff;
+            text-align: left;
+            line-height: 80px;
+            margin-left: 10%;
+           
+            
+       
+        }
+        .zabytki{
+            display:list-item;
+            list-style-position:outside;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        
+
+      }
+
+      figure {
+        grid-column: full;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: wheat;
+      }
+      img {
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+
+
+
+  }
+
+.lower-section > * {
+    background-color: #000000;
+    padding: 2em;
+  }
+
+
+
+
+        .gminy {
+            display: grid;
+            grid-template-columns: 2;
+            grid-auto-rows: minmax(400px, auto);
+            background: grey;
+        }
+
+     
+        .image,
+        .text {
+            background: rgb(32, 32, 32);
+            height: auto;
+            padding: 2%;
+            
+        }
+       
+
+
+
+
+
+
+        .text:nth-of-type(3) {
+            background: rgb(54, 54, 54);
+        }
+        .image:nth-of-type(4) {
+            background: rgb(54, 54, 54);
+        }
+       
+       
+      
+        .image:nth-of-type(8) {
+            background: rgb(54, 54, 54);
+        }
+        .text:nth-of-type(7) {
+            background: rgb(54, 54, 54);
+        }
+     
+
+        .text:nth-of-type(11) {
+            background: rgb(32, 32, 32);
+            
+        }
+
+        .image:nth-of-type(12)
+        {
+           
+            background: rgb(32, 32, 32);
+        }
+
+
+        .image:nth-of-type(14)
+        {
+            background: rgb(32, 32, 32);
+            
+        }
+
+        .text:nth-of-type(13) {
+            background: rgb(32, 32, 32);
+            
+        }
+
+
+        .text:nth-of-type(15)
+        {
+            background: rgb(54, 54, 54);
+        }
+        .image:nth-of-type(16)
+        {
+            background: rgb(54, 54, 54);
+        }
+        .image:nth-of-type(10){
+            background: rgb(54, 54, 54);
+        }
+
+        .text:nth-of-type(9){
+            background: rgb(54, 54, 54);
+        }
+       
+    
+
+
+            
+
+@media screen and (min-width: 1025px) {
+    .gminy {
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+      
+
+        background: grey;
+    }
+    .text:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .text:nth-of-type(7) {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+
+    .text:nth-of-type(7) {
+        grid-column: 2;
+        grid-row:6;
+    }
+    .image:nth-of-type(10) {
+        grid-column: 1;
+        grid-row:4;
+    }
+
+    .text:nth-of-type(15) {
+        grid-column: 2;
+        grid-row:8;
+    }
+
+    .image:nth-of-type(8) {
+        grid-column: 1;
+        grid-row:6;
+    }
+ 
+
+
+   
+}
 
 
 
@@ -393,6 +643,64 @@ margin-bottom: 5px;
         
   
  
+        .lower-section > * {
+            background-color: #000000;
+            padding: 0;
+
+            p{
+                padding-left: 2%;
+                padding-right: 2%;
+                
+            }
+        }
+    
+          .lower-section{
+        
+           
+            .info-lower-section{
+
+
+                
+                p{
+                   
+                   text-align:center;
+                   font-size: 1.1rem;
+                  }
+        
+                .zabytki li{
+                   
+                    line-height: 20px;
+                    margin-left: 5%;
+                    border-bottom: wheat solid 1px ;
+                    padding-bottom: 5%;
+                    padding-top: 5%;
+                    
+                   
+               
+                }
+                .zabytki li:last-child{
+                    border-bottom: none;
+                    margin-bottom: 5%;
+                }
+                
+                .zabytki{
+                    display:list-item;
+                    list-style-position:outside;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+        
+        
+        
+          }
+
+}
+        
+    
+        
+
+
+
    .nav-links ul {
       
        padding: 30px;
@@ -425,6 +733,7 @@ margin-bottom: 5px;
     .nav-links ul li a {
       
        color: black;
+       text-align: center;
    
       
        
@@ -450,6 +759,7 @@ margin-bottom: 5px;
     
     .nav-links ul li a:hover{
         
+        font-size: 1.3rem;
         color: black;
         
     
@@ -485,6 +795,8 @@ margin-bottom: 5px;
             margin-top: 50px;
         }
     }
+    
+   
 
 
 }
@@ -503,4 +815,397 @@ margin-bottom: 5px;
 
 
 
+/*-------------------- GMINY ---------------------*/
 
+.sub-header{
+
+   
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/slawno.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: #616161 solid 2px;
+   
+    
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: moveDown 1s ease-in-out forwards;
+        opacity: 0;
+        
+       
+      
+  
+    
+    }
+
+}
+
+
+.gminy{
+    
+    .text{
+        padding: 5%;
+        color: white;
+        line-height: 50px;
+    }
+    span{
+        font-weight: bold;
+        
+    }
+
+    .topspan{
+
+        border-top: #fcf200 solid 2px;
+        padding-top: 5px;
+        margin-top: 10px;
+
+    }
+    h2{
+        padding-bottom: 2%;
+    }
+    .image{
+      
+       
+   
+       
+        img{
+            width: 70%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            box-shadow: 1px 1px 0px #fcf200,
+            2px 2px 0px #fcf200,
+            3px 3px 0px #fcf200,
+            4px 4px 0px #fcf200,
+            5px 5px 0px #fcf200,
+            6px 6px 0px #fcf200,
+            7px 7px 0px #fcf200,
+            
+        }
+
+
+
+
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .wrapper2{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               width: 70%;
+
+
+                img{
+                   
+                    width: 100%;
+                }
+
+            }
+            
+              
+            
+        }
+
+       
+      
+    }
+
+    
+
+
+}
+
+
+/*-------------------- TURYSTYKA---------------------*/
+
+.sub-header2{
+
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/zalew.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: #616161 solid 2px;
+    
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: moveDown 1s ease-in-out forwards;
+        opacity: 0;
+        
+       
+      
+  
+    
+    }
+
+}
+
+
+#map {
+    height: 700px;
+    width: 100%;
+}
+
+
+
+.turystyka{
+    
+    border-top: #616161 solid 2px;
+    width: 80%;
+    margin: auto;
+   color: wheat;
+   
+   h2{
+       padding-bottom: 5%;
+   }
+
+    .col-turystyka{
+
+        flex-basis: 48%;
+        padding:  30px 2px;
+
+      
+
+      
+        .wrapper3{
+            height: 100%;
+            align-items: center;
+            display: flex;
+
+            
+        }
+
+
+    }
+
+    img{
+
+       
+     
+            width:100%;
+        
+            box-shadow: 1px 1px 0px #fcf200,
+            2px 2px 0px #fcf200,
+            3px 3px 0px #fcf200,
+            4px 4px 0px #fcf200,
+            5px 5px 0px #fcf200,
+            6px 6px 0px #fcf200,
+            7px 7px 0px #fcf200,
+            
+        
+    }
+    p{
+        text-align: justify;
+        padding-bottom: 5%;
+        border-bottom: #fcf200 solid 2px;
+    }
+
+    i{
+        color: white;
+    }
+
+
+
+}
+
+///------------------SZLAKI------------------------------
+
+
+
+.sub-header4{
+
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/szlaki.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: #616161 solid 2px;
+    
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: moveDown 1s ease-in-out forwards;
+        opacity: 0;
+        
+       
+      
+  
+    
+    }
+
+}
+
+
+.szlak{
+    color: white;
+
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    h2{
+        font-weight: bold;
+        color: #fcf200;
+        margin-bottom: 5%;
+        font-size: 2.5rem;
+    }
+    h4{
+        padding-bottom: 3%;
+        font-weight: bolder;
+        font-size: 2rem;
+        border-top: #bdb32e solid 2px;
+        padding-top: 4px;
+
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+    p{
+        padding-bottom: 5%;
+        font-size: 1.2rem;
+    }
+
+    img{
+        max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    box-shadow: 1px 1px 0px #fcf200,
+    2px 2px 0px #fcf200,
+    3px 3px 0px #fcf200,
+    4px 4px 0px #fcf200,
+    5px 5px 0px #fcf200,
+    6px 6px 0px #fcf200,
+    7px 7px 0px #fcf200,
+    }
+    span{
+        border-bottom: #bdb32e solid 2px;
+        padding-bottom: 4px;
+    }
+
+    ul {
+        list-style-type: none;
+        
+    }
+
+    ul li{
+        text-transform: uppercase;
+        line-height: 40px;
+        
+    }
+    ul li:nth-child(2n)
+    {
+        color: #bdb32e;
+    }
+
+    ul li:last-child{
+        padding-bottom: 3%;
+    }
+
+    .images{
+            padding-bottom: 3%;
+    }
+  
+}
+
+
+///---------------GALERIA--------------
+
+.sub-header3{
+
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: #616161 solid 2px;
+    
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: moveDown 1s ease-in-out forwards;
+        opacity: 0;
+        
+       
+      
+  
+    
+    }
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 0.2em;
+  
+  }
+  
+  
+
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+
+    width: 100%;
+  
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    color: white;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+ 

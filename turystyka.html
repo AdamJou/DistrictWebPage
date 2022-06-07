@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powiat Opoczyński</title>
+
+    
+
+    
+
+
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            
+              <a  class="logo-text" href="index.html"><img  src="img/logo.png"><span>Powiat </span> Opoczyński</a>
+             
+              <div class="nav-links" id="navLinks">
+                  <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
+                  <ul>
+                      <li><a  href="index.html">HOME</a></li>
+                      <li><a  href="gminy.html">GMINY</a></li>
+                      <li><a id="menu-1" href="turystyka.html">TURYSTYKA</a></li>
+                      <li><a href="szlaki.html">SZLAKI</a></li>
+                      <li><a href="galeria.html"">GALERIA</a></li>
+  
+                  </ul>
+              </div>
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+  
+              
+        </nav>
+        <h1>Turystyka</h1>
+      </section>
+
+
+
+
+
+        <div id="map"></div>
+        
+
+      
+        <script>
+            function initMap() {
+                var options = {  
+                    zoom:10,
+                    center:{lat:51.375264447833764, lng: 20.289481276077424}
+                }
+                var map = new google.maps.Map(document.getElementById('map'), options); 
+                
+                
+                
+               
+            
+                
+                
+                
+             
+                var markers = [
+                    {
+                        coordinates:{lat:51.375264447833764, lng: 20.289481276077424},
+                        iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                        content:'<h1>Opoczno</h1>'
+                    },
+                    {   
+                         
+                        coordinates:{lat:51.52740044576664,lng:20.227841232989565},
+                        content:'<h1>Kościół Świętego Idziego</h1>'
+                    },
+                    {
+                         
+                        coordinates:{lat:51.5354365129335,lng:20.298321477997998},
+                        content:'<h1>Szaniec Majora Hubala</h1>'
+                    },
+                    {
+                         
+                        
+                         coordinates:{lat:51.44785164116538, lng:  20.45287806018276},
+                         content:'<h1>Jezioro Drzwickie</h1>'
+                     },
+
+
+                     {
+                         
+                        
+                         coordinates:{lat:51.379616674283476,  lng:  20.13156665410687},
+                         content:'<h1>Geopark Owadów-Brzezinki</h1>'
+                     },
+
+                      
+                     {
+                         
+                        
+                         coordinates:{lat:51.221708156547585,  lng:  20.020491696566452},
+                         content:'<h1>Rezerwat Przyrody Diabla Góra</h1>'
+                     },
+
+                      
+                     {
+                         
+                        
+                         coordinates:{lat:51.44935085504585,  lng:  20.47910122431006},
+                         content:'<h1>Ruiny Zamku w Drzewicy</h1>'
+                     },
+
+                     {
+                         
+                        
+                         coordinates:{lat:51.462551966620644,  lng:  20.000916570658738},
+                         content:'<h1>Zalew Sulejowski</h1>'
+                     },
+
+                ];
+                
+                
+                
+             
+                for(var i = 0;i < markers.length;i++) {
+                    addMarker(markers[i]); 
+                }
+            
+                
+                
+             
+                function addMarker(props) { 
+                        var marker = new google.maps.Marker({ 
+                        position:props.coordinates,
+                        map:map,
+                    
+                    });
+                    
+                    if(props.iconImage) {
+                       marker.setIcon(props.iconImage); 
+                    }
+                    
+                    if(props.content) { 
+                         var infoWindow = new google.maps.InfoWindow({
+                            content:props.content
+                        });
+                
+                        marker.addListener('click', function() {
+                            infoWindow.open(map,marker);
+                        }); 
+                    } 
+                }
+            }
+        </script>
+
+        <script async  defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdyXNuElPVMVRVCBigLoK2Vp2I8Mh8OCg&callback=initMap">
+        </script>
+
+  
+
+        <section class="turystyka">
+
+
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Geopark Owadów-Brzezinki</h2>
+                        <p>
+                            Szczątki unikatowych w skali świata olbrzymich zwierząt morskich, które odkryto na terenie
+                            kamieniołomu w <i>Owadowie-Brzezinkach</i>, będzie można obejrzeć w geoparku stworzonym w jego obrębie. Otwarcie placówki,
+                            połączone m.in. z wykładami naukowców, odbędzie się w niedzielę 23 czerwca.
+                            
+                            Geopark powstał w sąsiedztwie kamieniołomu Owadów-Brzezinki, który położony jest w północno-zachodniej
+                            części Gór Świętokrzyskich w gminie Sławno. Jest to jedno z najbardziej unikatowych i bogatych stanowisk
+                            paleontologicznych odkrytych w ostatnich latach na świecie.
+                            Do tej pory naukowcy odkryli tam m.in. szczątki pierwszego znanego w naszym kraju latającego gada -
+                            pterozaura czy nowy dla nauki gatunek gada morskiego z grupy ichtiozaurów.
+                            
+                            Na geopark składać się będzie muzeum paleontologiczne i ścieżka edukacyjna.
+                            Jak opisuje w rozmowie z PAP jeden z autorów koncepcji ekspozycji, <i>dr Daniel Tyborowski</i> z Muzeum Ziemi PAN,
+                            w muzeum znajdzie się kilkaset okazów głównie zwierząt morskich, które żyły 148 mln lat temu - czyli w czasie późnej
+                            jury, kiedy po Ziemi stąpały dinozaury. W przygotowanie scenariusza wystawy zaangażowany był również dr Błażej
+                            Błażejowski z Instytut Paleobiologii PAN i inni eksperci. Tyborowski podkreśla, że inspiracją były podobne placówki z
+                            zachodniej Europy.
+                            
+                            Wśród najciekawszych prezentowanych na wystawie skamieniałości - zdaniem Tyborowskiego
+                            - są te należące do wielkich drapieżnych ryb i morskich gadów czy rzadko spotykanych w zapisie kopalnym skrzypłoczy
+                            (stawonogów).
+                            Jest też wielka kolekcja owadów - pasikoników, ważek i chrząszczy, które zachowują się zazwyczaj bardzo rzadko.
+                            <br><Br>
+                            <i>"Odkrycia w Owadowie pokazują, że obszar ten był blisko 150 mln lat temu prawdziwym tyglem, gdzie mieszkała olbrzymia
+                            różnorodność gatunków zwierząt morskich, które pochodziły z różnych regionów jurajskiej Europy.
+                            Pojedyncze gatunki znane z Owadowa paleontolodzy odkrywają na przykład w Wielkiej Brytanii czy w Rosji.
+                            Ale nigdy nie odkrywano ich razem, zamieszkujących jeden rejon, co jest widoczne właśnie w Owadowie"</i> - dodaje.
+
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="https://mz.pan.pl/pl/geopark-owadow-brzezinki-juz-otwarty/"> <img src="img/geopark.jpg" alt="Geopark w Owadowie"></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Kościół św. Idziego w Inowłodzu</h2>
+                        <p>
+                            Kościół św. Idziego w Inowłodzu – romański kościół zrekonstruowany w latach 1936-1938 przez Adolfa Szyszko-Bohusza.
+                            Świątynię według nowożytnej płyty inskrypcyjnej wybudowano w 1082 z fundacji Władysława Hermana, jednak w rzeczywistości pochodzi ona prawdopodobnie z XII w. (najpóźniej z 1138) i jest fundacją Bolesława Krzywoustego[potrzebny przypis]. Świątynię wymienia również Jan Długosz, podając rok 1086 jako datę fundacji. Równocześnie z kościołem powstał na tej samej górze klasztor Benedyktynek, który został w 1241 zburzony podczas najazdu tatarskiego. Nosi on cechy typowe dla architektury obronnej. Po powstaniu kościoła pw. św. Michała w 1520 starsza świątynia straciła znaczenie i zaczęła podupadać. Pierwszą próbę odnowienia kościoła podjęto w 1790, sprowadzając do niego z kapliczki w Giełzowie cudowny obraz Matki Boskiej Bolesnej.
+
+                            W 1793 został ograbiony przez żołnierzy pruskich, a następnie zamieniony na magazyn zbożowy. Na początku XX wieku świątynia była zniszczona, a jej dach pokryty był słomą. Prace restauracyjne rozpoczęto z inicjatywy cara Mikołaja II. Kolejne zniszczenia zostały spowodowane przez I wojnę światową. Pierwsze, nieukończone prace rekonstrukcyjne prowadzono w latach 1924-1926. Ostateczny wygląd nadała mu restauracja prowadzona z inicjatywy prezydenta Ignacego Mościckiego, według projektu Wilhelma Henneberga. Wprowadzono wtedy wiele elementów obcych wcześniejszej architekturze kościoła – m.in. podwyższono o jedną kondygnację wieżę, a w nawie od strony zachodniej na miejscu otwartej arkady wybudowano emporę z tryforyjnymi przezroczami. Świątynię ponownie poświęcono 1 listopada 1938.
+                            
+                            Przy kościele znajduje się cmentarz w Inowłodzu.
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="https://podroze.onet.pl/polska/lodzkie/kosciol-sw-idziego-w-inowlodzu-to-jeden-z-najstarszych-kosciolow-w-polsce/gm8vp99"> <img src="img/inowlodz.jpg" alt="Kościół Świętego Idziego"></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+
+
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Szaniec Hubala</h2>
+                        <p>
+                            Szaniec Hubala – symboliczna budowla z kamieni polnych w kształcie pierścienia, znajdująca się na polanie opodal wsi Anielin, w miejscu, gdzie o świcie 30 kwietnia 1940 w potyczce z Niemcami poległ major Henryk Dobrzański „Hubal”, dowódca Oddziału Wydzielonego Wojska Polskiego. Wraz z nim poległ jego podkomendny kapral Antoni Kossowski „Ryś”. Od kul padł również koń majora „Demon”.
+
+                            W centralnym miejscu obiektu stoi głaz z tablicą upamiętniającą to wydarzenie.
+                             Na wewnętrznych ścianach umieszczone są dodatkowe tablice pamiątkowe.
+                            
+                            Każdego roku, 30 kwietnia, w rocznicę śmierci „Hubala” odbywają się tu uroczystości żałobne.
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="http://www.polskaniezwykla.pl/web/place/19890,anielin-szaniec-hubala.html"> <img src="img/hubal.jpg" alt="Kościół Świętego Idziego"></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+
+
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Zamek w Drzewicy</h2>
+                        <p>
+                            Zamek w Drzewicy – zamek zbudowany w latach 1527–1535 z inicjatywy arcybiskupa gnieźnieńskiego Macieja Drzewickiego,
+                            w stylu gotycko-renesansowym. Wybudowany na skraju miasta, nad rzeką Drzewiczką, otoczony dwiema fosami i dzielącym je
+                            wałem ziemnym.
+                            Budowla stanęła na planie regularnego, zbliżonego do kwadratu prostokąta. W jej systemie obronnym istotną rolę odgrywały
+                            cztery kwadratowe
+                            wieże usytuowane w narożach założenia. Obiekt spłonął w 1814 roku, jest dziś dobrze zachowaną,
+                            po koronę murów, ruiną. Dzięki temu, że zamek nie był przebudowywany, jest to jedna z lepiej zachowanych rezydencji z 1
+                            poł. XVI wieku w Polsce.
+                            Budowlę wzniesiono w latach 1527–1535 z inicjatywy prymasa Macieja Drzewickiego herbu Ciołek w jego rodowych
+                            posiadłościach.
+                            Po ponad dwóch wiekach zamek przejmują Sołtykowie a następnie Szaniawscy.
+                            W drugiej połowie XVIII wieku zamek zostaje ofiarowany bernardynkom, które straciły w pożarze swój dawny klasztor
+                            ufundowany w 1630 roku przez Annę z Bąkowca-Drzewicką. W 1814 roku pożar trawi również zamek w Drzewicy.
+                            Według jednego z podań, po zakończonych roratach nie zgasiły świec od których spłonął cały budynek.
+                            Od tego czasu nikt więcej nie zamieszkiwał zamku, który popadał w coraz większą ruinę.
+                            
+                            W latach 1948-49 i później 1985-86 na zamku prowadzone były pierwsze badania zamku i prace archeologiczne. W 1952 roku
+                            powstał projekt zabezpieczania i zadaszenia zamku.
+                            
+                            W 1990 roku ruiny zamku kupił <i>Antoni Borzewski</i> z Warszawy. W 2017 roku rozpoczęły się na zamku prace zabezpieczające.
+
+
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="https://www.drzewica.pl/page/zamek"> <img src="img/zamek.jpg" alt="Kościół Świętego Idziego"></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Rezerwat przyrody Diabla Góra</h2>
+                        <p>
+                            Rezerwat przyrody Diabla Góra – rezerwat krajobrazowy położony w gminach Aleksandrów (powiat piotrkowski) i <i>Żarnów
+                                (powiat opoczyński)</i>
+                            w województwie łódzkim, w Nadleśnictwie Przedbórz na terenie obrębu Reczków.
+                            Obejmuje on teren wzniesienia o nazwie Diabla Góra.
+                            Znajduje się w granicach Piliczańskiego Obszaru Chronionego Krajobrazu.
+                            Powierzchnia rezerwatu wynosi <i>161,19 hektarów.</i>
+                            
+                            Utworzony na podstawie zarządzenia Ministerstwa Ochrony Środowiska i Zasobów Naturalnych z 29 grudnia 1987 roku.
+                            Celem ochrony rezerwatu jest zachowanie porośniętego lasem izolowanego wzgórza z wychodniami skał piaskowcowych, które
+                            było miejscem bitew partyzanckich okresu II wojny światowej.
+                            
+                            Gatunkiem dominującym w drzewostanie jest sosna z domieszką dębu. Wyróżniono tu następujące zbiorowiska roślinne:
+                            kwaśna dąbrowa, bór mieszany oraz bór sosnowy świeży występujący na zalesionych gruntach porolnych.
+                            
+                            Z ciekawszych zwierząt odnotowano tu <i>
+
+                            gniewosza plamistego</i> – gatunek węża wpisany do Polskiej Czerwonej Księgi Zwierząt.
+                            
+                            Według obowiązującego planu ochrony ustanowionego w 2011 roku (z późniejszymi zmianami), obszar rezerwatu objęty jest
+                            ochroną czynną.
+                            
+                            Rezerwat jest punktem początkowym szlak turystyczny czerwony czerwonego szlaku turystycznego prowadzącego do Łącznej.
+                            Przez Diablą Górę przebiega szlak turystyczny niebieski pieszy Szlak Rekreacyjny Rzeki Pilicy.
+
+
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="https://mz.pan.pl/pl/geopark-owadow-brzezinki-juz-otwarty/"> <img src="img/gora.jpg" alt="Rezerwat Przyrody"></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+
+
+                
+                <div class="row">
+                    <div class="col-turystyka">
+                        <h2>Jezioro Sulejowskie </h2>
+                        <p>
+                            Jezioro powstało w latach 1969–1974 w wyniku przegrodzenia rzeki Pilicy w okolicy miejscowości Smardzewice,
+                            na jej 139 kilometrze od ujścia, na granicy ówczesnych województw łódzkiego i kieleckiego.
+                            Powstała tam betonowo-ziemna zapora o długości 1200 m i wysokości 16 m, która przyczyniła się do powstania zbiornika o
+                            powierzchni 2700 ha.
+                            Linia brzegowa zbiornika wynosi 58 km, z czego 11 km znajduje się na terenie gminy Wolbórz. Zasilany jest przez dwie
+                            rzeki: Pilicę i Luciążę.
+                            O budowie jeziora na Pilicy w okolicach Sulejowa zaczęto myśleć w połowie lat 60. XX wieku. Istniejące ujęcia wody
+                            zlokalizowane w Łodzi i jej obrębie oraz w Tomaszowie Mazowieckim przestały zaspokajać potrzeby mieszkańców i przemysłu.
+                            Doszło nawet do racjonowania wody.
+                            
+                            Hasło „Woda dla Łodzi” widniało na transparentach przy budowie tamy spiętrzającej Pilicę i
+                            przy karczowaniu terenów przewidzianych do zalania. Nowo budowane jezioro zaporowe połączono z Łodzią
+                            potężnym rurociągiem. Początkowy jego odcinek, prowadzący do stacji uzdatniania w Kalinku, to stalowa rura o długości
+                            36,6 km i średnicy 1,60 m. Jeszcze potężniejszy jest jego pozostały odcinek, łączący Kalinko ze zbiornikami i
+                            przepompownią na Chojnach.
+                            Ma on bowiem średnicę aż 2,20 metra.
+                            W Jeziorze występuje wiele gatunków ryb, dominujące to: <i> płoć, leszcz, karp, amur, krąp, okoń, sum, sandacz i szczupak.</i>
+
+
+
+
+                        </p>
+                        </div>
+                        <div class="col-turystyka">
+
+                            <div class="wrapper3">
+                            
+                            
+                                 <a href="https://kopanina.pl/zalew-sulejowski-plaze-atrakcje-nieoczywiste-miejsca/"> <img src="img/sulejow.jpg" alt="Zalew "></a>
+
+                             
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+        </section>
+
+
+    <footer>
+
+        <p>Adam Michoń • 2022 • <i class="fa-brands fa-github" id="git" ></i> </p>
+
+
+    </footer>
+
+
+
+    <script>
+
+
+    var menu = document.getElementById("burger");
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+        navLinks.style.position="fixed";
+       
+
+    
+     
+        
+    
+
+      
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        navLinks.style.position="";
+    
+    
+    }
+
+    document.getElementById("git").onclick = function() {
+
+        window.location.href="https://github.com/AdamJou";
+      
+    };
+
+
+
+
+    </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: 'true'
+        });
+        
+    </script>
+
+    
+</body>
+</html>

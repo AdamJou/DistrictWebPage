@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Powiat Opoczyński</title>
+
 </head>
 <body>
     <section class="header">
@@ -18,13 +19,13 @@
             <a  class="logo-text" href="index.html"><img  src="img/logo.png"><span>Powiat </span> Opoczyński</a>
            
             <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
                 <ul>
-                    <li><a id="menu-1" href="#">HOME</a></li>
-                    <li><a href="#">GMINY</a></li>
-                    <li><a href="#">TURYSTYKA</a></li>
-                    <li><a href="#">SZLAKI</a></li>
-                    <li><a href="#">GALERIA</a></li>
+                    <li><a id="menu-1" href="index.html">HOME</a></li>
+                    <li><a href="gminy.html">GMINY</a></li>
+                    <li><a href="turystyka.html">TURYSTYKA</a></li>
+                    <li><a href="szlaki.html">SZLAKI</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
 
                 </ul>
             </div>
@@ -33,7 +34,7 @@
       </nav>
 
       
-      <div class="text-box">
+        <div class="text-box">
 
   
 
@@ -44,7 +45,7 @@
             <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
         </svg>
    
-      </div>
+        </div>
 
     </section>
 
@@ -61,9 +62,9 @@
 
 
 
-        <div class="row">
+        <div class="row" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
 
-            <div class="column">
+            <div class="column" >
                 
                 <h3>Lasy</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel porro commodi atque error, soluta obcaecati saepe possimus ad. Consequuntur cum quibusdam culpa a eius quaerat totam in modi facilis.</p>
@@ -74,7 +75,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel porro commodi atque error, soluta obcaecati saepe possimus ad. Consequuntur cum quibusdam culpa a eius quaerat totam in modi facilis.</p>
                 <img src="img/wiatrak.jpg">
             </div>
-            <div class="column">
+            <div class="column" >
                 <h3>Zbiorniki wodne</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel porro commodi atque error, soluta obcaecati saepe possimus ad. Consequuntur cum quibusdam culpa a eius quaerat totam in modi facilis.</p>
                 <img src="img/staw.jpg">
@@ -84,27 +85,62 @@
 
 
 
+
+
     </section>
 
 
-<footer>
-
-<p>Adam Michoń • 2022 • <i class="fa-brands fa-github" id="git" ></i> </p>
 
 
-</footer>
+    <article class="lower-section">
+        <section>
+          <h2>Informacje</h1>
+          <p>Powiat opoczyński został utworzony w 1999 roku w ramach reformy administracyjnej.
+              Jego siedzibą jest miasto Opoczno.
+               Według danych z 30 czerwca 2020 roku powiat zamieszkiwało 75 847 osób</p>
+
+        </section>
+        <figure data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+          <img src="./img/pegaz.jpg">
+        </figure>
+        <section class="info-lower-section">
+          <p> Opoczyńskie to region o charakterystycznych cechach, różniący się od innych grup etnicznych gwarą, strojem oraz specyfiką wielu elementów folkloru, a wszystkie cechy kultury ludowej składają się na odrębność regionalną Opocznian. Folklor opoczyński jest rozpoznawalny nie tylko w kraju, ale także za granicą. Opoczno to perfekcyjne połączenie folkloru, przedsiębiorczości, historii i nowoczesności.
+               Spośród zabytków architektury na uwagę zasługują: </p>
+               <ul class="zabytki" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                <li>stara część miasta Opoczno,</li>
+                <li>ruiny renesansowego zamku warownego z XVI wieku w Drzewicy,</li>
+                <li>900- letni Kościół św. Mikołaja w Żarnowie, barokowy Kościół i Klasztor w Paradyżu,</li>
+                <li>kompleks kościelno  klasztorny w Poświętnem-Studzianna,</li>
+                <li>rynek z ratuszem z XVIII wieku oraz klasycystyczny zespół pałacowy w Białaczowie.</li>
+            </ul>
+        </section>
+      </article>
+
+      
+
+     
+
+
+    <footer>
+
+        <p>Adam Michoń • 2022 • <i class="fa-brands fa-github" id="git" ></i> </p>
+
+
+    </footer>
 
 
 
+    <script>
 
 
-
-<script>
-
-
+    var menu = document.getElementById("burger");
     var navLinks = document.getElementById("navLinks");
+    
     function showMenu(){
         navLinks.style.right="0";
+        navLinks.style.position="fixed";
+       
+
     
      
         
@@ -114,6 +150,7 @@
     }
     function hideMenu(){
         navLinks.style.right="-200px";
+        navLinks.style.position="";
     
     
     }
@@ -127,7 +164,15 @@
 
 
 
-</script>
+    </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: 'true'
+        });
+        
+    </script>
 
     
 </body>
