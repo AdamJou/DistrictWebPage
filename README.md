@@ -1,5 +1,5 @@
 
-<h1>Strona w budowie</h1>
+
 
 Zaprojektować i wykonać responsywną stronę internetową o tematyce turystycznej, dla wybranego powiatu w Polsce.
 
