@@ -16,3 +16,15 @@ treści przedstawiające ofertę turystyczną,
 mapę administracyjną powiatu z podziałem na gminy,
 mapy z przykładowymi szlakami turystycznymi,
 materiały graficzne: obrazy, wideo, animacje, galerie zdjęć.
+
+  
+  <h2>You can visit page at: https://adamjou.github.io/DistrictWebPage/</h2>
+  
+  
+!(https://imgur.com/NkpCUU2)
+  
+!(https://imgur.com/mFj4wOR)
+  
+!(https://imgur.com/xFqkvMJ)
+  
+  
