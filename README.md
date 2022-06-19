@@ -21,10 +21,10 @@ materiały graficzne: obrazy, wideo, animacje, galerie zdjęć.
   <h2>You can visit page at: https://adamjou.github.io/DistrictWebPage/</h2>
   
   
-!(https://imgur.com/NkpCUU2)
+![Main](https://imgur.com/NkpCUU2)
   
-!(https://imgur.com/mFj4wOR)
+![Subhead](https://imgur.com/mFj4wOR)
   
-!(https://imgur.com/xFqkvMJ)
+![RWD](https://imgur.com/xFqkvMJ)
   
   
