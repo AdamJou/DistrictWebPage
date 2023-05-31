@@ -1,25 +1,43 @@
 
 
+## Task:
+Design and implement a responsive website on tourism for a selected poviat in Poland.
 
-Zaprojektować i wykonać responsywną stronę internetową o tematyce turystycznej, dla wybranego powiatu w Polsce.
+Sample titles:
 
-Przykładowe tytuły:
+<li>Tourist attractions of the "name" county
+<li>By bike through the "name" district
+<li>Tourist trails and bicycle paths in the district.
+<li>Design the layout (graphic layout) of the website using CSS and HTML.
 
-<li>Atrakcje turystyczne powiatu "nazwa"
-<li>Rowerem przez powiat "nazwa"
-<li>Szlaki turystyczne i ścieżki rowerowe w powiecie "nazwa".
-<li>Zaprojektować layout (układ graficzny) strony z wykorzystaniem CSS i HTML.
+Include in the design:
 
-W projekcie uwzględnić:
+content presenting the tourist offer,
+administrative map of the poviat divided into communes,
+maps with exemplary tourist trails,
+graphic materials: images, videos, animations, photo galleries.
 
-treści przedstawiające ofertę turystyczną,
-mapę administracyjną powiatu z podziałem na gminy,
-mapy z przykładowymi szlakami turystycznymi,
-materiały graficzne: obrazy, wideo, animacje, galerie zdjęć.
-
-  
+<hr>  
   <h2>You can visit page at: https://adamjou.github.io/DistrictWebPage/</h2>
+ <hr>
   
+ # Technologies
+  <ul>
+    <li>SCSS</li>
+    <li>Vanilla JavaScript</li>
+    <li><a href="https://michalsnik.github.io/aos/">AOS library</a></li>
+    <li>Google Maps API</li>
+  </ul>
+  
+  <hr>
+  
+ # Problems
+  These were my beginnings of creating pages, the project has many errors, such as using pixels for heights, margins, paddings,
+  incorrect class names, too large size of photos, which causes slow loading of the page and missing API key for Google Maps.
+
+  <hr>
+  
+# Gallery  
   
 ![image](https://user-images.githubusercontent.com/101346105/174494030-76adc928-891e-4d32-a222-a04dd6a96162.png)
   
