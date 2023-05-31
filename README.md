@@ -39,19 +39,42 @@ graphic materials: images, videos, animations, photo galleries.
   
 # Gallery  
   
+  
+  <p align="center">Hero section
+    
 ![image](https://user-images.githubusercontent.com/101346105/174494030-76adc928-891e-4d32-a222-a04dd6a96162.png)
+    
+    
   
-  ![image](https://user-images.githubusercontent.com/101346105/174494051-bc2bf1d1-0a5f-43a5-9a1f-6c006b51ef26.png)
-  ![image](https://user-images.githubusercontent.com/101346105/174494070-52562011-8206-42b8-b532-0803ba73f278.png)
 
-![image](https://user-images.githubusercontent.com/101346105/174494122-277655b0-c587-4210-a528-32d59190242f.png)
+
+  <p align="center">Mobile </p>
+      
+<img src="https://user-images.githubusercontent.com/101346105/174494051-bc2bf1d1-0a5f-43a5-9a1f-6c006b51ef26.png" width="49%"></img> <img src="https://user-images.githubusercontent.com/101346105/174494070-52562011-8206-42b8-b532-0803ba73f278.png" width="49%"></img> 
+   
+
+   
+    
   
+ 
+    
+
+    
+  <p align="center">Gallery
+    
+![image](https://user-images.githubusercontent.com/101346105/174494122-277655b0-c587-4210-a528-32d59190242f.png)
+    
+  <p align="center">Embeded Google Map with pins
+    
   ![image](https://user-images.githubusercontent.com/101346105/174494141-e22b8c17-bffb-4a1b-a9d1-034e085ecff2.png)
+    
+  <p align="center"> Example content
+    
   ![image](https://user-images.githubusercontent.com/101346105/174494160-4f44ef75-0f26-4983-b035-66f3ab060754.png)
 
-
+                   
   
-  
+                         
 
 
 
